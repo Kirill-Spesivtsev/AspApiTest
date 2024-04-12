@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  aspapitest:
-    image: ${DOCKER_REGISTRY-}aspapitest
+  asp.api.test:
+    image: ${DOCKER_REGISTRY-}asp-api-test
     build:
       context: .
       dockerfile: AspApiTest/Dockerfile

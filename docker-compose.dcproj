@@ -7,7 +7,7 @@
     <ProjectGuid>f9b58bd6-5f0b-421b-a4c5-8eced48bff45</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
-    <DockerServiceName>aspapitest</DockerServiceName>
+    <DockerServiceName>asp.api.test</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
