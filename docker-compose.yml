@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  aspapitest:
+    image: ${DOCKER_REGISTRY-}aspapitest
+    build:
+      context: .
+      dockerfile: AspApiTest/Dockerfile
