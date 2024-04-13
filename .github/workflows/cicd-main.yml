@@ -27,4 +27,4 @@ jobs:
       run: docker-compose -f docker-compose.yml -f docker-compose.override.yml build
 
     - name: Push Docker images by Docker compose
-      run: docker-compose push ${{ secrets.DOCKERHUB_USERNAME }}/asp-api-test:dev
+      run: docker-compose push asp.api.test
