@@ -23,8 +23,8 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    - name: Build Docker images
-      run: docker-compose build
+    - name: Build Docker images by Docker compose
+      run: docker-compose -f docker-compose.yml -f docker-compose.override.yml build
 
-    - name: Push Docker images
-      run: docker-compose push
+    - name: Push Docker images by Docker compose
+      run: docker-compose push ${{ secrets.DOCKERHUB_USERNAME }}/asp-api-test:dev
