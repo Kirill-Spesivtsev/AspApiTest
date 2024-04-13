@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   asp.api.test:
-    image: ${DOCKER_REGISTRY-}asp-api-test
+    image: adelium/asp-api-test:dev
     build:
       context: .
       dockerfile: AspApiTest/Dockerfile
